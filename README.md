@@ -14,14 +14,12 @@
 Все собранные образы должны быть в docker hub
 ## Проверка
 1. Основное задание
-- создание образа и заливка на hub.docker.com
-
-Склонировать репозиторий:
+- Склонировать репозиторий:
 ```
 git clone https://github.com/linuxprolab/hw14.git
 cd hw14/hw14.1
 ```
-Выполнить команды:
+- Выполнить команды:
 ```
 docker build -t linuxprolab/minimalnginx .
 docker login docker.io
@@ -37,5 +35,6 @@ docker run -it -p 8080:80 linuxprolab/minimalnginx
 - Можно ли в контейнере собрать ядро?
 Можно. Достаточно установить нужные тулзы. Или взять готовый образ.
 https://hub.docker.com/r/naftulikay/ubuntu-kernel-build
+
 2. Задание со зведочкой 
 - In progress...

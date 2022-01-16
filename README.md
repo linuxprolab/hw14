@@ -15,6 +15,7 @@
 ## Проверка
 1. Основное задание
 - создание образа и заливка на hub.docker.com
+
 Склонировать репозиторий:
 ```
 git clone https://github.com/linuxprolab/hw14.git
@@ -27,8 +28,9 @@ docker login docker.io
 docker push linuxprolab/minimalnginx
 ```
 - запуск контейнера из registry
+```
 docker run -it -p 8080:80 linuxprolab/minimalnginx
-
+```
 - Определите разницу между контейнером и образом.
 Разница между контейнером и образом в том что образ это упакованное приложение, будующий контейнер. Контейнер запускается из образа.
 
@@ -36,4 +38,4 @@ docker run -it -p 8080:80 linuxprolab/minimalnginx
 Можно. Достаточно установить нужные тулзы. Или взять готовый образ.
 https://hub.docker.com/r/naftulikay/ubuntu-kernel-build
 2. Задание со зведочкой 
-In progress...
+- In progress...

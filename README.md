@@ -1,5 +1,4 @@
 # Домашнее задание 14. Docker, docker-compose, dockerfile 
-
 1. Основное задание
 Создайте свой кастомный образ nginx на базе alpine. После запуска nginx должен
 отдавать кастомную страницу (достаточно изменить дефолтную страницу nginx)
@@ -25,16 +24,12 @@ docker build -t linuxprolab/minimalnginx .
 docker login docker.io
 docker push linuxprolab/minimalnginx
 ```
-- запуск контейнера из registry
+- Запустить контейнера из registry:
 ```
 docker run -it -p 8080:80 linuxprolab/minimalnginx
 ```
 - Определите разницу между контейнером и образом.
-Разница между контейнером и образом в том что образ это упакованное приложение, будующий контейнер. Контейнер запускается из образа.
-
-- Можно ли в контейнере собрать ядро?
 Можно. Достаточно установить нужные тулзы. Или взять готовый образ.
 https://hub.docker.com/r/naftulikay/ubuntu-kernel-build
-
 2. Задание со зведочкой 
 - In progress...
